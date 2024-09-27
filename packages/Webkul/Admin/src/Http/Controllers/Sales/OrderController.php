@@ -44,7 +44,7 @@ class OrderController extends Controller
         }
 
         $groups = $this->customerGroupRepository->findWhere([['code', '<>', 'guest']]);
-
+ 
         return view('admin::sales.orders.index', compact('groups'));
     }
 

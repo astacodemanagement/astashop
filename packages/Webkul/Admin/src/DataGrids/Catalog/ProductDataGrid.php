@@ -74,8 +74,8 @@ class ProductDataGrid extends DataGrid
         $this->addFilter('type', 'product_flat.type');
         $this->addFilter('status', 'product_flat.status');
         $this->addFilter('attribute_family', 'af.id');
-
-        return $queryBuilder;
+      
+       return $queryBuilder;
     }
 
     /**
